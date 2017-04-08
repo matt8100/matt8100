@@ -8,7 +8,7 @@ body {
     width: auto;
     height: auto;
 }
-#circlebox {
+.circlebox {
     width: 100px;
     height: 500px;
     position: absolute;
@@ -17,17 +17,20 @@ body {
     left: 0;
     right: 0;
     top: -50%;
-    animation-name: spin;
-    animation-timing-function: linear;
-    animation-duration: 2s; 
-    animation-iteration-count: infinite;
+    background-color: transparent;
 }
-#circle {
+.circle {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: white;
     margin-top: 400px;
+}
+#circlebox1 {
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
 }
 @keyframes spin {
     from {
